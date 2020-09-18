@@ -25,15 +25,15 @@ modules:
       - install -T -Dm644 ${FLATPAK_DEST}/bin/goland.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 ${FLATPAK_ID}.desktop
       - install -t ${FLATPAK_DEST}/share/metainfo/ -Dm644 ${FLATPAK_ID}.metainfo.xml
-      - icon_in="${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg"; icon_out="${FLATPAK_ID}.png";
-        for s in {32,64,128,256,512}; do rsvg-convert "${icon_in}" -w "${s}" -h "${s}"
-        -a -f png -o "${icon_out}"; install -p -Dm644 "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/";
-        done;
+      - icon_in="${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg";
+        icon_out="${FLATPAK_ID}.png"; for s in {32,64,128,256,512}; do rsvg-convert
+        "${icon_in}" -w "${s}" -h "${s}" -a -f png -o "${icon_out}"; install -p -Dm644
+        "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/"; done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/go/goland-2020.2.2.tar.gz
-        sha256: b00e0dc5656c77cb786d84ebaf5dcee6eb65516cceeba16ea0023d0d4b5fcbe4
-        size: 427513377
+        url: https://download.jetbrains.com/go/goland-2020.2.3.tar.gz
+        sha256: c0ca83c05e156c58483b42eb9a14fd1013434c8936fbba20ffd4b0b722a6bfa2
+        size: 427140538
         x-checker-data:
           type: jetbrains
           code: GO

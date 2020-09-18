@@ -36,7 +36,7 @@ modules:
         size: 427513377
         x-checker-data:
           type: jetbrains
-          code: GL
+          code: GO
         dest-filename: goland.tar.gz
       - type: file
         path: com.jetbrains.GoLand.metainfo.xml

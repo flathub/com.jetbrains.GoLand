@@ -31,9 +31,9 @@ modules:
         "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/"; done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/go/goland-2020.2.3.tar.gz
-        sha256: c0ca83c05e156c58483b42eb9a14fd1013434c8936fbba20ffd4b0b722a6bfa2
-        size: 427140538
+        url: https://download.jetbrains.com/go/goland-2020.3.tar.gz
+        sha256: 92a4315ce06168e8bd94a375bdfd045e484685eb439eed65f8c287c346ed4142
+        size: 484825433
         x-checker-data:
           type: jetbrains
           code: GO

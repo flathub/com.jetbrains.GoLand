@@ -16,6 +16,7 @@ finish-args:
   - --filesystem=xdg-run/keyring
   - --device=all
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
+  - --allow=devel
 modules:
   - name: goland
     buildsystem: simple

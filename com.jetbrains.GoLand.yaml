@@ -14,6 +14,7 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --filesystem=xdg-run/keyring
+  - --filesystem=xdg-run/gnupg:ro
   - --device=all
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
   - --allow=devel

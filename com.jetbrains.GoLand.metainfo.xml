@@ -9,7 +9,7 @@
 		<p>
       		GoLand is available for a free 30-day evaluation. Monthly and yearly subscription options are
       		available for companies and individual users.
-    	</p>
+		</p>
 		<p>
 			If you want to use the Go installation of your system, flatpak mounts your root directory into /var/run/host .
 			You can set your GOROOT accordingly (e.g. /var/run/host/usr/lib/go).

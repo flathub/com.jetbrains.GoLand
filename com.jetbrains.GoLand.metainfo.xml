@@ -21,7 +21,16 @@
 	<url type="help">https://www.jetbrains.com/help/go/</url>
 	<launchable type="desktop-id">com.jetbrains.GoLand.desktop</launchable>
 	<releases>
-		<release version="2021.3.2" date="2021-12-30"/>
+		<release version="2021.3.2" date="2021-12-30">
+			<url>https://youtrack.jetbrains.com/articles/GO-A-23/GoLand-2021.3.2-(213.6461.81-build)-Release-Notes</url>
+			<description>
+GoLand 2021.3 has native support for Go projects in WSL, the Inline Function refactoring, and support for remote development in Beta mode.
+Starting from this version, gofmt on save is enabled by default. GoLand 2021.3 has some improvements for the debugger, such as Delve for ARM64, the Show Types option, and more.
+There are two new postfixes for converting strings to numbers, a new template for table tests with testify assertions and better completion for values in struct tags.
+As usual, the new GoLand version brings web development enhancements and a variety of new features for working with databases.
+If you prefer an interactive approach to learning, complete the What's New in GoLand 2021.3 tutorial from the Welcome screen.
+			</description>
+		</release>
 		<release version="2021.3.1" date="2021-12-20"/>
 		<release version="2021.3" date="2021-12-02"/>
 		<release version="2021.2.4" date="2021-10-21"/>

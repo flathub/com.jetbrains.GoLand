@@ -1,6 +1,6 @@
 app-id: com.jetbrains.GoLand
 runtime: org.freedesktop.Sdk
-runtime-version: '20.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: goland.sh
 separate-locales: false
@@ -10,7 +10,6 @@ finish-args:
   - --share=network
   - --socket=pulseaudio
   - --filesystem=host
-  - --socket=session-bus
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --filesystem=xdg-run/keyring

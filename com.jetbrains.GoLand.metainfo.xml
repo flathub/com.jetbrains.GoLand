@@ -21,6 +21,7 @@
 	<url type="help">https://www.jetbrains.com/help/go/</url>
 	<launchable type="desktop-id">com.jetbrains.GoLand.desktop</launchable>
 	<releases>
+		<release version="2021.3.3" date="2022-01-28"/>
 		<release version="2021.3.2" date="2021-12-30">
 			<url>https://youtrack.jetbrains.com/articles/GO-A-23/GoLand-2021.3.2-(213.6461.81-build)-Release-Notes</url>
 			<description>

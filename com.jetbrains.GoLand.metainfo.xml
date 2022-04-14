@@ -57,6 +57,18 @@ If you prefer an interactive approach to learning, complete the What's New in Go
 	<developer_name>JetBrains s.r.o.</developer_name>
 	<screenshots>
 		<screenshot type="default">
+			<image type="source">https://www.jetbrains.com/go/img/screenshots/1_Code_insight_2_hover.png</image>
+		</screenshot>
+		<screenshot>
+			<image type="source">https://www.jetbrains.com/go/img/screenshots/6_Extensibility.png</image>
+		</screenshot>
+		<screenshot>
+			<image type="source">https://www.jetbrains.com/go/img/screenshots/3_Run_Debug_hover.png</image>
+		</screenshot>
+		<screenshot>
+			<image type="source">https://www.jetbrains.com/go/img/screenshots/7_VCS_hover.png</image>
+		</screenshot>
+		<screenshot>
 			<image type="source">https://www.jetbrains.com/go/features/screenshots/go_completion_2.png</image>
 		</screenshot>
 		<screenshot>

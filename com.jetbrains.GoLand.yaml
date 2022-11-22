@@ -34,8 +34,8 @@ modules:
         "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/"; done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/go/goland-2022.2.4.tar.gz
-        sha256: e39aaae39e6021e87cece7622c51860d23e2a5b5ac2683fb67d369ec7d609084
+        url: https://download.jetbrains.com/go/goland-2022.2.5.tar.gz
+        sha256: 164d4a1122cf15db263616538df5d24a33314fe82a99d9925fd3cbb2997a7987
         x-checker-data:
           type: jetbrains
           code: GO

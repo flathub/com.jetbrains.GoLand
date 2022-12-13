@@ -18,6 +18,8 @@ finish-args:
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
   - --allow=devel
 modules:
+  - shared-modules/libsecret/libsecret.json
+
   - modules/rsync.yml
 
   - name: goland

@@ -22,6 +22,9 @@
 	<launchable type="desktop-id">com.jetbrains.GoLand.desktop</launchable>
 	<releases>
 		<release version="2024.2" date="2024-08-07">
+      <description></description>
+    </release>
+		<release version="2024.1.5" date="2024-08-06">
 			<description></description>
 		</release>
 		<release version="2024.1.4" date="2024-06-20">

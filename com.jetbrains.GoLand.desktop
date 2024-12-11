@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=GoLand
 GenericName=Capable and Ergonomic Go IDE
-Exec=goland.sh
+Exec=goland
 Terminal=false
 Icon=com.jetbrains.GoLand
 Type=Application

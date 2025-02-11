@@ -35,7 +35,7 @@ modules:
       - -Dprogram_name=goland
     sources:
       - type: dir
-        path: jetbrains-flatpak-wrapper
+        path: ide-flatpak-wrapper
 
   - name: goland
     buildsystem: simple

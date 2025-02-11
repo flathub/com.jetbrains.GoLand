@@ -1,26 +1,44 @@
 app-id: com.jetbrains.GoLand
 runtime: org.freedesktop.Sdk
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: goland
 separate-locales: false
 finish-args:
-  - --share=ipc
   - --socket=x11
-  - --share=network
   - --socket=pulseaudio
-  - --filesystem=host
+  - --socket=ssh-auth
+  - --socket=gpg-agent
+  - --share=ipc
+  - --share=network
+  - --device=all
+  - --filesystem=home
+  - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
+  - --env=IDEA_PROPERTIES=${FLATPAK_DEST}/bin/idea.properties
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --filesystem=xdg-run/keyring
   - --filesystem=xdg-run/gnupg:ro
-  - --device=all
-  - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
+  - --filesystem=xdg-run/docker
+  - --filesystem=xdg-run/podman
   - --allow=devel
 modules:
   - shared-modules/libsecret/libsecret.json
 
   - modules/rsync.yml
+
+  - name: ide-flatpak-wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_title=GoLand
+      - -Deditor_binary=/app/bin/goland
+      - -Dprogram_name=goland
+      - -Dfirst_run_template=first_run.txt
+    sources:
+      - type: dir
+        path: ide-flatpak-wrapper
+      - type: file
+        path: first_run.txt
 
   - name: goland
     buildsystem: simple

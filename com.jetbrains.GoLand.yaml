@@ -5,23 +5,23 @@ sdk: org.freedesktop.Sdk
 command: goland
 separate-locales: false
 finish-args:
-  - --socket=x11
-  - --socket=pulseaudio
-  - --socket=ssh-auth
-  - --socket=gpg-agent
-  - --share=ipc
-  - --share=network
+  - --allow=devel
   - --device=all
-  - --filesystem=home
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
   - --env=IDEA_PROPERTIES=${FLATPAK_DEST}/bin/idea.properties
+  - --filesystem=all
+  - --filesystem=xdg-run/docker
+  - --filesystem=xdg-run/gnupg:ro
+  - --filesystem=xdg-run/keyring
+  - --filesystem=xdg-run/podman
+  - --share=ipc
+  - --share=network
+  - --socket=gpg-agent
+  - --socket=pulseaudio
+  - --socket=ssh-auth
+  - --socket=x11
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
-  - --filesystem=xdg-run/keyring
-  - --filesystem=xdg-run/gnupg:ro
-  - --filesystem=xdg-run/docker
-  - --filesystem=xdg-run/podman
-  - --allow=devel
 modules:
   - shared-modules/libsecret/libsecret.json
 

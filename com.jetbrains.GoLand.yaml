@@ -2,7 +2,7 @@ app-id: com.jetbrains.GoLand
 runtime: org.freedesktop.Sdk
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: goland
+command: goland-wrapper
 separate-locales: false
 finish-args:
   - --allow=devel
@@ -31,8 +31,8 @@ modules:
     buildsystem: meson
     config-opts:
       - -Deditor_binary=/app/bin/goland.sh
-      - -Deditor_title=goland
-      - -Dprogram_name=goland
+      - -Deditor_title=GoLand
+      - -Dprogram_name=goland-wrapper
     sources:
       - type: dir
         path: ide-flatpak-wrapper

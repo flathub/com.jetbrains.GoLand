@@ -9,7 +9,7 @@ finish-args:
   - --device=all
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
   - --env=IDEA_PROPERTIES=${FLATPAK_DEST}/bin/idea.properties
-  - --filesystem=all
+  - --filesystem=host
   - --filesystem=xdg-run/docker
   - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-run/keyring

@@ -1,26 +1,41 @@
 app-id: com.jetbrains.GoLand
 runtime: org.freedesktop.Sdk
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: goland
+command: goland-wrapper
 separate-locales: false
 finish-args:
-  - --share=ipc
-  - --socket=x11
-  - --share=network
-  - --socket=pulseaudio
-  - --filesystem=host
-  - --talk-name=org.freedesktop.Notifications
-  - --talk-name=org.freedesktop.secrets
-  - --filesystem=xdg-run/keyring
-  - --filesystem=xdg-run/gnupg:ro
+  - --allow=devel
   - --device=all
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
-  - --allow=devel
+  - --env=IDEA_PROPERTIES=${FLATPAK_DEST}/bin/idea.properties
+  - --filesystem=host
+  - --filesystem=xdg-run/docker
+  - --filesystem=xdg-run/gnupg:ro
+  - --filesystem=xdg-run/keyring
+  - --filesystem=xdg-run/podman
+  - --share=ipc
+  - --share=network
+  - --socket=gpg-agent
+  - --socket=pulseaudio
+  - --socket=ssh-auth
+  - --socket=x11
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.secrets
 modules:
   - shared-modules/libsecret/libsecret.json
 
   - modules/rsync.yml
+
+  - name: wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_binary=/app/bin/goland.sh
+      - -Deditor_title=GoLand
+      - -Dprogram_name=goland-wrapper
+    sources:
+      - type: dir
+        path: ide-flatpak-wrapper
 
   - name: goland
     buildsystem: simple

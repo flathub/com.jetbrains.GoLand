@@ -51,16 +51,16 @@ modules:
       - cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties
     sources:
       - type: file
-        url: https://download.jetbrains.com/go/goland-2024.3.4.tar.gz
-        sha256: f474f1f19fb04f7de73596c51b49f2675b3fc11df6a7aaba325c3ad98477d1df
+        url: https://download.jetbrains.com/go/goland-2024.3.5.tar.gz
+        sha256: d59f537fb8d9c741a704605ec00c4b4230211301cd0609c73c66d5edb4eb9340
         only-arches: [x86_64]
         x-checker-data:
           type: jetbrains
           code: GO
         dest-filename: goland.tar.gz
       - type: file
-        url: https://download.jetbrains.com/go/goland-2024.3.4-aarch64.tar.gz
-        sha256: 9e1a8921c92e3cd396d81f9a8011ed279d303565fe69b8c2322dedf9a6164643
+        url: https://download.jetbrains.com/go/goland-2024.3.5-aarch64.tar.gz
+        sha256: 12236e5b82e99ce27925567afe049e3ce298b083b764b75ffb67b5b7b8072e61
         only-arches: [aarch64]
         x-checker-data:
           type: jetbrains

@@ -21,8 +21,11 @@
 	<url type="help">https://www.jetbrains.com/help/go/</url>
 	<launchable type="desktop-id">com.jetbrains.GoLand.desktop</launchable>
 	<releases>
-		<release version="2025.1.3" date="2025-06-23">
+		<release version="2025.1.4" date="2025-07-25">
 			<description></description>
+		</release>
+		<release version="2025.1.3" date="2025-06-23">
+			<description/>
 		</release>
 		<release version="2025.1.2" date="2025-06-05">
 			<description/>

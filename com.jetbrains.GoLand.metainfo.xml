@@ -21,8 +21,23 @@
 	<url type="help">https://www.jetbrains.com/help/go/</url>
 	<launchable type="desktop-id">com.jetbrains.GoLand.desktop</launchable>
 	<releases>
+		<release version="2025.2" date="2025-08-05">
+			<description>
+				<p><em>Interprocedural nil dereference analysis</em></p>
+				<p>The new interprocedural analysis helps identify potential nil pointer issues earlier. It tracks how nil values move through functions, files, and packages, so you can address possible problems before they surface in production.</p>
+				<p><em>Non-blocking Welcome screen</em></p>
+				<p>The Welcome screen now opens in a tab, allowing immediate access to tools like the terminal, Kubernetes, the HTTP Client, Docker, and databases, without needing to open a project. You can also work with standalone files or start something new right away.</p>
+				<p><em>Smarter endpoint discovery and request generation</em></p>
+				<p>The Endpoints tool window now fully supports the new pattern syntax in net/http.ServeMux, including method-based and wildcard routes like GET /task/{id}/. HTTP methods are displayed next to each endpoint for added clarity. HTTP method detection and autocompletion have been improved to make generating requests easier, with support for the standard net/http package and frameworks like Chi, Gin, and Gorilla.</p>
+				<p><em>Junie updates</em></p>
+				<p>Junie, the coding agent by JetBrains, is now significantly faster, includes MCP support, supports remote development, and is fully integrated with GitHub (Early Access Program-only).</p>
+				<p><em>AI Assistant updates</em></p>
+				<p>JetBrains AI Assistant now delivers smarter code completion across all supported languages, comes with expanded support for additional file types like SQL, and offers greater flexibility for connecting local models. Improved context awareness and project rules ensure our AI follows your project's standards.</p>
+			</description>
+			<url>https://go.jetbrains.com/dc/k2oLQLl4sOXaMfj4PBQzO5d6C7393Kgubncq91CjUw_a0ka14NlXdYjbbysrFj83Hy12aIviuNQJ56WOMOCHD33gzFDYugn-qtS-GkqlKefOb6_6ZTFUeJl8kJETkCNAwQ1i88rdkj9N8twFl62F2CrhZxNR8NcY7dnMzCJM0kztIQBrEOPY4zIKLgxP7_WgyLkbO6U_3ZY984q_nmM4qutKZwn02RtQKeX197IvqMAaSfuvaqFQhoLIjNTNPDH13fwxf2IfcDK1EXUMYov1dA==/NDI2LVFWRC0xMTQAAAGcGjd6ZxcZHbmggNg1NR0NQeT0UEzisXB56XYcoNbni6Zkt23ZOuF-C4LNcdBzzxz3CySMQHc=</url>
+		</release>
 		<release version="2025.1.3" date="2025-06-23">
-			<description></description>
+			<description/>
 		</release>
 		<release version="2025.1.2" date="2025-06-05">
 			<description/>
@@ -110,11 +125,11 @@
 		<release version="2021.3.2" date="2021-12-30">
 			<url>https://youtrack.jetbrains.com/articles/GO-A-23/GoLand-2021.3.2-(213.6461.81-build)-Release-Notes</url>
 			<description>
-GoLand 2021.3 has native support for Go projects in WSL, the Inline Function refactoring, and support for remote development in Beta mode.
+<p>GoLand 2021.3 has native support for Go projects in WSL, the Inline Function refactoring, and support for remote development in Beta mode.
 Starting from this version, gofmt on save is enabled by default. GoLand 2021.3 has some improvements for the debugger, such as Delve for ARM64, the Show Types option, and more.
 There are two new postfixes for converting strings to numbers, a new template for table tests with testify assertions and better completion for values in struct tags.
 As usual, the new GoLand version brings web development enhancements and a variety of new features for working with databases.
-If you prefer an interactive approach to learning, complete the What's New in GoLand 2021.3 tutorial from the Welcome screen.
+If you prefer an interactive approach to learning, complete the What's New in GoLand 2021.3 tutorial from the Welcome screen.</p>
 			</description>
 		</release>
 		<release version="2021.3.1" date="2021-12-20"/>

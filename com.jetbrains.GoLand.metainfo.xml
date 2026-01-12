@@ -5,6 +5,7 @@
 	<name>GoLand</name>
 	<summary>Capable and Ergonomic Go IDE</summary>
 	<description>
+		<p>**NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.**</p>
 		<p>GoLand is a cross-platform IDE built specially for Go developers</p>
 		<p>
       		GoLand is available for a free 30-day evaluation. Monthly and yearly subscription options are
@@ -14,7 +15,6 @@
 			If you want to use the Go installation of your system, flatpak mounts your root directory into /var/run/host .
 			You can set your GOROOT accordingly (e.g. /var/run/host/usr/lib/go).
 		</p>
-    	<p>NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.</p>
 	</description>
 	<url type="homepage">http://www.jetbrains.com/go/</url>
 	<url type="bugtracker">https://youtrack.jetbrains.com/</url>

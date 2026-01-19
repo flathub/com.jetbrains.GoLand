@@ -7,6 +7,7 @@ separate-locales: false
 finish-args:
   - --allow=devel
   - --device=all
+  - --env=FLATPAK_ENABLE_SDK_EXT=node24
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
   - --env=IDEA_PROPERTIES=${FLATPAK_DEST}/bin/idea.properties
   - --filesystem=host

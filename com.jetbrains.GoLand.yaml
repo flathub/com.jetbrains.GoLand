@@ -34,8 +34,9 @@ modules:
       - -Deditor_title=GoLand
       - -Dprogram_name=goland-wrapper
     sources:
-      - type: dir
-        path: ide-flatpak-wrapper
+      - type: git
+        url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
+        commit: 3314b55ccd4ece8810715787e246f8407e20caab
 
   - name: goland
     buildsystem: simple

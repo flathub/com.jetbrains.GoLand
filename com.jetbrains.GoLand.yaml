@@ -35,8 +35,9 @@ modules:
       - -Deditor_title=GoLand
       - -Dprogram_name=goland-wrapper
     sources:
-      - type: dir
-        path: ide-flatpak-wrapper
+      - type: git
+        url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
+        commit: 3314b55ccd4ece8810715787e246f8407e20caab
 
   - name: goland
     buildsystem: simple
@@ -52,16 +53,16 @@ modules:
       - cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties
     sources:
       - type: file
-        url: https://download.jetbrains.com/go/goland-2025.3.1.tar.gz
-        sha256: 1618471e629b8a5e186764dd1cf401a2bd9aad3ba2ff78fdd896f51a7727f94a
+        url: https://download.jetbrains.com/go/goland-2025.3.2.tar.gz
+        sha256: 369bdc6ed9c45ca94b2b116b35e05b574bdb6085f2cadba9732afa197b5b452b
         only-arches: [x86_64]
         x-checker-data:
           type: jetbrains
           code: GO
         dest-filename: goland.tar.gz
       - type: file
-        url: https://download.jetbrains.com/go/goland-2025.3.1-aarch64.tar.gz
-        sha256: e65b17be22bd9f01e88020b055391ea8805ed46fd95835330f7cfb1f2c7acb46
+        url: https://download.jetbrains.com/go/goland-2025.3.2-aarch64.tar.gz
+        sha256: c55c2c3f90bb498f3e340d5ad79996d3337bb75529ac70fa97455b12bb5fab42
         only-arches: [aarch64]
         x-checker-data:
           type: jetbrains

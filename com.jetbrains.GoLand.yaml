@@ -30,7 +30,7 @@ modules:
   - name: wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/bin/goland.sh
+      - -Deditor_binary=/app/bin/goland
       - -Deditor_title=GoLand
       - -Dprogram_name=goland-wrapper
     sources:

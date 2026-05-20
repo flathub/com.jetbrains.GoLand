@@ -1,4 +1,8 @@
 name: ruby
+buildsystem: autotools
+no-autogen: true
+make-install-args:
+  - PREFIX=/app
 sources:
   - type: archive
     url: https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.gz

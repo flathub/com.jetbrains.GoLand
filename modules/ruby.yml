@@ -2,7 +2,7 @@ name: ruby
 buildsystem: autotools
 no-autogen: true
 config-opts:
-  - --prefix=${FLATPAK_DEST}
+  - --prefix=/app
 sources:
   - type: archive
     url: https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.gz

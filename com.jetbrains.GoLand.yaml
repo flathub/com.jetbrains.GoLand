@@ -39,7 +39,19 @@ modules:
       - type: git
         url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
         commit: 3314b55ccd4ece8810715787e246f8407e20caab
-
+  - name: ruby
+    no-autogen: true
+    cleanup:
+      - '*'
+    sources:
+      - type: archive
+        url: https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.5.tar.gz
+        sha256: 7d6149079a63f8ae1d326c9fa65c6019ba2dc3155eae7b39159817911c88958e
+        x-checker-data:
+          type: html
+          url: "https://www.ruby-lang.org/en/downloads/"
+          version-pattern: "The current stable version is ([\\d\\.-]*)"
+          url-template: "https://cache.ruby-lang.org/pub/ruby/$major.$minor/ruby-$major.$minor.$patch.tar.gz"
   - name: goland
     buildsystem: simple
     build-commands:

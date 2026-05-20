@@ -1,6 +1,6 @@
 app-id: com.jetbrains.GoLand
 runtime: org.freedesktop.Sdk
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: goland-wrapper
 separate-locales: false
@@ -26,9 +26,8 @@ finish-args:
   - --talk-name=org.freedesktop.FileManager1
 modules:
   - shared-modules/libsecret/libsecret.json
-
   - modules/rsync.yml
-
+  - modules/ruby.yml
   - name: wrapper
     buildsystem: meson
     config-opts:
@@ -39,7 +38,6 @@ modules:
       - type: git
         url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
         commit: 3314b55ccd4ece8810715787e246f8407e20caab
-
   - name: goland
     buildsystem: simple
     build-commands:
@@ -54,16 +52,16 @@ modules:
       - cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties
     sources:
       - type: file
-        url: https://download.jetbrains.com/go/goland-2026.1.1.tar.gz
-        sha256: 012ceac3cc6e45a480c33a2206c2fee8f472b92bc1878ded9c5e2612692eafdb
+        url: https://download.jetbrains.com/go/goland-2026.1.2.tar.gz
+        sha256: d4590311a6a9c836d33dee2ca0e7720872e4a7f513deb67ab221b21b28e6189a
         only-arches: [x86_64]
         x-checker-data:
           type: jetbrains
           code: GO
         dest-filename: goland.tar.gz
       - type: file
-        url: https://download.jetbrains.com/go/goland-2026.1.1-aarch64.tar.gz
-        sha256: db93c00c1c9c75ab379fa05648638986e31a2dc8a4e4fe407dc10eea663be63b
+        url: https://download.jetbrains.com/go/goland-2026.1.2-aarch64.tar.gz
+        sha256: 13c5a9038b3f78f10302ce3b20f0b4bf5d02d552a5f54614ed5357ff98a0a66e
         only-arches: [aarch64]
         x-checker-data:
           type: jetbrains

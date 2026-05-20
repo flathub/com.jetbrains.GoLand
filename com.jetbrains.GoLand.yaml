@@ -26,9 +26,8 @@ finish-args:
   - --talk-name=org.freedesktop.FileManager1
 modules:
   - shared-modules/libsecret/libsecret.json
-
   - modules/rsync.yml
-
+  - modules/ruby.yml
   - name: wrapper
     buildsystem: meson
     config-opts:

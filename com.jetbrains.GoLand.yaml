@@ -2,6 +2,8 @@ app-id: com.jetbrains.GoLand
 runtime: org.freedesktop.Sdk
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
+sdk-extension:
+  - org.freedesktop.Sdk.Extension.golang
 command: goland-wrapper
 separate-locales: false
 finish-args:

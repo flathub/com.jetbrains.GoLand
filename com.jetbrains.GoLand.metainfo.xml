@@ -20,8 +20,11 @@
 	<url type="help">https://www.jetbrains.com/help/go/</url>
 	<launchable type="desktop-id">com.jetbrains.GoLand.desktop</launchable>
 	<releases>
-		<release version="2026.2.3" date="2026-09-16">
+		<release version="2026.2.4" date="2026-10-30">
 			<description></description>
+		</release>
+		<release version="2026.2.3" date="2026-09-16">
+			<description/>
 		</release>
 		<release version="2026.2.2" date="2026-09-03">
 			<description/>
@@ -207,7 +210,7 @@ If you prefer an interactive approach to learning, complete the What's New in Go
 		<release version="2020.2.3" date="2020-09-17"/>
 		<release version="2020.2.2" date="2020-08-13"/>
 	</releases>
-	<project_license>LicenseRef-proprietary</project_license>
+	<project_license>LicenseRef-proprietary=https://www.jetbrains.com/legal/#terms-and-agreements</project_license>
 	<developer_name>JetBrains s.r.o.</developer_name>
 	<screenshots>
 		<screenshot type="default">

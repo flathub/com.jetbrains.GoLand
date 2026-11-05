@@ -27,6 +27,17 @@ finish-args:
 modules:
   - shared-modules/libsecret/libsecret.json
   - modules/rsync.yml
+  - name: libyaml
+    buildsystem: autotools
+    sources:
+      - type: archive
+        url: https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
+        sha256: c642ae9b75fee120b2d96c712538bd2cf283228d2337df2cf2988e3c02678ef4
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/yaml/libyaml/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name == ("yaml-" + $version + ".tar.gz")) | .browser_download_url
   - modules/ruby.yml
   - name: wrapper
     buildsystem: meson

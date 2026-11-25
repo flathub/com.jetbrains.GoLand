@@ -31,8 +31,8 @@ modules:
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz
-        sha256: c642ae9b75fee120b2d96c712538bd2cf283228d2337df2cf2988e3c02678ef4
+        url: https://github.com/yaml/libyaml/releases/download/0.2.7/yaml-0.2.7.tar.gz
+        sha256: 0c39256b8be0fc689f5c7bfdea1bc9f3fb1fd648468fd3cc6fd375e09ffb6f13
         x-checker-data:
           type: json
           url: https://api.github.com/repos/yaml/libyaml/releases/latest
@@ -63,16 +63,16 @@ modules:
       - cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties
     sources:
       - type: file
-        url: https://download.jetbrains.com/go/goland-2026.3.tar.gz
-        sha256: f69816791625bb334b1de9d80ce47a38c0aa90951151846eea899e1a35a15a19
+        url: https://download.jetbrains.com/go/goland-2026.3.0.1.tar.gz
+        sha256: 69a4c31fc570b5054e2b848117ca4fd279a8014a1c8550a5a065996ab3964e35
         only-arches: [x86_64]
         x-checker-data:
           type: jetbrains
           code: GO
         dest-filename: goland.tar.gz
       - type: file
-        url: https://download.jetbrains.com/go/goland-2026.3-aarch64.tar.gz
-        sha256: 60f481ad65b3f2cb03dcfcb13ae0a9719a944597b35d4bf3e84da7502a478ba5
+        url: https://download.jetbrains.com/go/goland-2026.3.0.1-aarch64.tar.gz
+        sha256: bb75db225ebd2c9e7e027153d3524ce87698ec6873aa162dcbcd342b3db183fe
         only-arches: [aarch64]
         x-checker-data:
           type: jetbrains
